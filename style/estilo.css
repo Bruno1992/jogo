@@ -1,0 +1,394 @@
+body{
+	text-align: center;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+/*Fundo da Aplicação Escolha e Tema*/
+#background{
+	background-image: url("../imagens/fundo/fundo.png");
+	background-repeat: no-repeat;
+
+	height:790px;
+	width: 480px; 
+}
+#arco{
+	background-image: url("../imagens/fundo/arco.png");
+	background-repeat: no-repeat;
+	height:790px;
+	width: 480px; 
+}
+#nuvem{
+	background-image: url("../imagens/fundo/nuvens.png");
+	background-repeat: no-repeat;
+	height:790px;
+	width: 100px; 
+}
+#rodape{
+	clear:both;
+	width:480;
+	height: 300px;
+	
+}
+.arredondamento{
+	border-style: solid;
+	border-color: #ffffff;
+	/* definimos o quão arredondado irá ficar nosso box */
+	border-radius: 10px;
+	/* Declaração para aparecer no Firefox */
+	-moz-border-radius: 10px;
+	/* Para exibir nos outros navegadores como Chrome, safari, opera*/
+	-webkit-border-radius: 10px;
+
+
+	Read more: http://www.linhadecodigo.com.br/artigo/3611/bordas-arredondadas-css3-estilizando-bordas.aspx#ixzz3SnZfR0Vy
+}
+/* Escolhendo tema */
+#temas{
+	margin-top: 200px;
+	height: 410px;
+}
+#temas_box1{
+	float: left;
+}
+#temas_box2{
+	width:110px;
+	float: left;
+	padding-top: 77px;
+	margin-left:16px;
+}
+#temas_box3{
+	margin-left: 15px;
+	float: left;	
+	width:100px;
+}
+#btn_tema_desafio{
+	background-image: url("../imagens/painel/boxes_temas.png");
+	background-repeat: no-repeat;
+	width: 116px;
+	height:30px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+#btn_tema_portugues{
+	background-image: url("../imagens/painel/boxes_temas.png");
+	background-repeat: no-repeat;
+	width: 116px;
+	height:30px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+#btn_tema_historia{
+	background-image: url("../imagens/painel/boxes_temas.png");
+	background-repeat: no-repeat;
+	width: 116px;
+	height:30px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+#btn_tema_ciencia{
+	background-image: url("../imagens/painel/boxes_temas.png");
+	background-repeat: no-repeat;
+	width: 116px;
+	height:30px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+#btn_tema_matematica{
+	background-image: url("../imagens/painel/boxes_temas.png");
+	background-repeat: no-repeat;
+	width: 116px;
+	height:30px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+#btn_tema_geografia{
+	background-image: url("../imagens/painel/boxes_temas.png");
+	background-repeat: no-repeat;
+	width: 116px;
+	height:30px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+.btn_tema_opc{
+
+	color: white; 
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-size: 22px;
+}
+
+#marcador_desafio{
+	position:relative;
+	top:47px;
+	left: -46px;
+}
+#marcador_portugues{
+	position:relative;
+	top:47px;
+	left: -46px;
+}
+#marcador_historia{
+	position:relative;
+	top:47px;
+	left: -46px;
+}
+#marcador_ciencias{
+	position:relative;
+	top:47px;
+	left: -12px;
+}
+#marcador_matematica{
+	position:relative;
+	top:47px;
+	left: -12px;
+}
+#marcador_geografia{
+	position:relative;
+	top:47px;
+	left: -12px;
+}
+
+/*Escolha Personagem */
+#topo_pergunta{
+	width: 100%;
+	height: 45px;
+}
+#personagem{
+	float: left;
+	width: auto;
+}
+#estatistica{
+	background-image: url("../imagens/pontos/estatistica.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	width: 140px;
+	height:90%;
+	padding-top: 0px;
+	padding-left: 0px;
+	float: left;
+	margin-left:0px;
+	font-size: 93%;
+	
+}
+#pontos{
+	background-image: url("../imagens/pontos/pontos.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	width: 100px;
+	height:85%;
+	padding-top: 0px;
+	padding-left: -10px;
+	float: right;
+	
+}
+#acertos{
+   float: left;
+   margin-top: 10px;
+   margin-left: 1px;
+   width: 62px;
+}
+#acerto_txt{
+   float: left;
+   width: 100px;
+   margin-top: 10px;
+    margin-left: -20px;
+}
+#quadro{
+	background-image: url("../imagens/painel/quadro.png");
+	background-repeat: no-repeat;
+	width: 453px;
+	height:356px;
+	padding-top: 10px;
+	padding-left: 0px;
+}
+#voltar{
+	float:left;
+	width: 55px;
+	margin-left: 72px;
+	padding-top: 74px;
+}
+#prosseguir{
+	float:left;
+	width: 55px;
+	margin-left: 4px;
+	padding-top: 74px;
+}
+#janela-char{
+	background-image: url("../imagens/painel/janela_char.png");
+	background-repeat: no-repeat;
+	width: 170px;
+	height:180px;
+	padding-top: 32px;
+	margin-left: 14px;
+	float: left;
+
+}
+.txt_dificuldade{
+
+	color: white; 
+	text-shadow: black 0.4em 0.4em 0.2em;
+	font-size: 40px;
+	background:#4169E1;
+}
+#dificuldade{
+	padding-top: 30px;	
+	width: 278px;
+	height: 300px;
+}
+
+/* Tela do Quiz */
+#background_quiz{
+	background-color: #f3e7b1;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 100%; 
+}
+#quadro_pergunta{
+	clear: both;
+	background-color: #d4b67d;
+	height:auto;
+	width: 90%; 
+	padding-top: 40px;
+	word-wrap: break-word;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+
+}
+#respostas{
+	margin-top: 5px;
+	height:auto;
+	width: auto;
+	padding-left: 0px; 
+	text-align: left;
+}
+#resposta1{
+	clear: both;
+	width: auto;
+	height: auto;
+}
+#resposta1_txt{
+	background-color: #d4b67d;
+	height:auto;
+	width: 74%;
+	float: left;
+	margin-left: -10px;
+	min-height: 30px;
+	word-wrap: break-word;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#resposta1_img{
+	float: left;
+	width:auto;
+	height: auto;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+#resposta2{
+	padding-top: 10px;		
+	clear: both;
+	margin-top: 20px;	
+	width: auto;
+	height: auto;
+}
+#resposta2_txt{
+	background-color: #d4b67d;
+	height:auto;
+    width: 74%;
+	float: left;
+	margin-left: -10px;
+	min-height: 30px;
+	word-wrap: break-word;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#resposta2_img{
+
+	float: left;
+	width:auto;
+	height: auto;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+#resposta3{
+	padding-top: 10px;		
+	clear: both;
+	margin-top: 20px;	
+	width: auto;
+	height: auto;
+}
+#resposta3_txt{
+	background-color: #d4b67d;
+	height:auto;
+	width: 74%;
+	float: left;
+	margin-left: -10px;
+	min-height: 30px;
+	word-wrap: break-word;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#resposta3_img{
+	float: left;
+	height: auto;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+
+#resposta4{
+	padding-top: 10px;		
+	clear: both;
+	margin-top: 20px;	
+	width: auto;
+	height: auto;
+}
+#resposta4_txt{
+	background-color: #d4b67d;
+	height:auto;
+	width: 74%;
+	float: left;
+	margin-left: -10px;
+	min-height: 30px;
+	word-wrap: break-word;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#resposta4_img{
+
+	float: left;
+	width:auto;
+	height: auto;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+#nuvem_quiz{
+	background-image: url("../imagens/fundo/nuvens.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:auto;
+	width: 100%; 	
+}
+#rodape_pergunta{
+	clear:both;
+	width:480px;
+	height: 100px;
+	margin-top: 10px;
+}
+#confirmar{
+	width: auto;
+	margin-top: 15px;
+	float: left;
+}
