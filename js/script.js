@@ -25,6 +25,7 @@ window.onload = function(){
   MakeRequest();
   var i = (radom(0,7));   
 
+
   document.getElementById('idPergunta').value = objPergunta.perguntas[i].id;  
   document.getElementById('quadro_pergunta').textContent = objPergunta.perguntas[i].Pergunta;	
   document.getElementById('resposta1_txt').textContent = objPergunta.perguntas[i].alternativa1;	
@@ -86,40 +87,41 @@ function confirma(){
    // criar um array com as 
    fundoPadrao();
    var i = (radom(0,7));   
-   var pos = (radom(0,2));
+   var pos = (radom(1,4));
  //var valor = idPerguntaRespondida.indexOf(i);
+ alert(pos);
  switch(pos) {
   case 1:
-   pos1='resposta1_txt';
-   pos2='resposta2_txt';
-   pos3='resposta3_txt';
-   pos4='resposta4_txt';
+  pos1='resposta4_txt';
+  pos2='resposta3_txt';
+  pos3='resposta2_txt';
+  pos4='resposta1_txt';
   break;
   case 2:
-   pos1='resposta2_txt';
-   pos2='resposta1_txt';
-   pos3='resposta4_txt';
-   pos4='resposta3_txt';
+  pos1='resposta3_txt';
+  pos2='resposta4_txt';
+  pos3='resposta1_txt';
+  pos4='resposta2_txt';
   break;
   case 3:
-   pos1='resposta3_txt';
-   pos2='resposta2_txt';
-   pos3='resposta4_txt';
-   pos4='resposta1_txt';
+  pos1='resposta2_txt';
+  pos2='resposta1_txt';
+  pos3='resposta4_txt';
+  pos4='resposta3_txt';
   break;
   default:
-   pos1='resposta4_txt';
-   pos2='resposta1_txt';
-   pos3='resposta2_txt';
-   pos4='resposta3_txt';
+  pos1='resposta1_txt';
+  pos2='resposta2_txt';
+  pos3='resposta3_txt';
+  pos4='resposta4_txt';
   break;
 }
 document.getElementById('idPergunta').value = objPergunta.perguntas[i].id;  
 document.getElementById('quadro_pergunta').textContent = objPergunta.perguntas[i].Pergunta;  
-document.getElementById('resposta1_txt').textContent = objPergunta.perguntas[i].alternativa1;  
-document.getElementById('resposta2_txt').textContent = objPergunta.perguntas[i].alternativa2;    
-document.getElementById('resposta3_txt').textContent = objPergunta.perguntas[i].alternativa3;    
-document.getElementById('resposta4_txt').textContent = objPergunta.perguntas[i].resposta;
+document.getElementById(pos1).textContent = objPergunta.perguntas[i].alternativa1;  
+document.getElementById(pos2).textContent = objPergunta.perguntas[i].alternativa2;    
+document.getElementById(pos3).textContent = objPergunta.perguntas[i].alternativa3;    
+document.getElementById(pos4).textContent = objPergunta.perguntas[i].resposta;
 
 }
 function fundoPadrao(){
@@ -192,5 +194,5 @@ function MakeRequest()
   
   console.log(xmlHttp);
   xmlHttp.send(null);
- 
+
 }
